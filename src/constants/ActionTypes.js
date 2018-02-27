@@ -1,0 +1,3 @@
+export const REQUEST_BRAND = 'REQUEST_BRAND';
+export const RECEIVE_BRAND = 'RECEIVE_BRAND';
+export const CHANGE_BRAND = 'CHANGE_BRAND';
