@@ -36,11 +36,11 @@ export function fetchBrand(url, brand, localBrandId, dispatch) {
   });
 }
 
-export function fetchBrandId(brand) {
+export function fetchBrandId(name) {
   return function(dispatch) {
     const localBrandId = v4();
     dispatch(requestBrand(brand, localBrandId));
-    return fetch('https://api.bratabase.com/brands/' + brand).then(
+    return fetch('https://api.bratabase.com/brands/' + name).then(
       response => response.json(),
       error => console.log('An error occurred.', error)
     ).then(function(json) {

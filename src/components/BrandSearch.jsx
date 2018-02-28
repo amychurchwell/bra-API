@@ -1,5 +1,5 @@
 import React from 'react';
-import { fetchBrand } from './../actions';
+import { fetchBrandId } from './../actions';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
 
@@ -12,7 +12,7 @@ function BrandSearch({ dispatch }){
         if (!input.value.trim()) {
           return;
         } else {
-          dispatch(fetchBrand(input.value.trim()));
+          dispatch(fetchBrandId(input.value.trim()));
         }
         return;
         // ...we'll add more custom logic here later...
